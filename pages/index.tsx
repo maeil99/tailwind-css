@@ -37,12 +37,12 @@ const Home: NextPage = () => {
           </nav>
         </div>
         <main className="px-16 py-6">
-          <div>
+          <div className='flex justify-end'>
             <Link href="#">
               <a className='text-primary'>Log in</a>
             </Link>
             <Link href="#">
-              <a className='text-primary'>Sign up</a>
+              <a className='text-primary ml-2'>Sign up</a>
             </Link>
           </div>
           <header>
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           <h4 className="font-bold mt-12 pb-2 border-b-2 border-gray-200">Most Popular</h4>
           {/* cards goes here */}
           <div className="mt-8"></div>
-          <div>
+          <div className='flex justify-center'>
             <div className='bg-secondary-100 text-secondary-200'>Load More</div>
           </div>
         </main>
