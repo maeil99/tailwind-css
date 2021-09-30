@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             </h4>
             {/* cards goes here */}
             <div className="mt-8"></div>
-            <div className="bg-white rounded overflow-hidden shadow-md">
+            <div className="bg-white rounded overflow-hidden shadow-md relative">
               <Image
                 src={Kacang}
                 alt="Bean Chilli Stew"
@@ -66,6 +66,9 @@ const Home: NextPage = () => {
                 <span className="block text-gray-500 text-sm">
                   Recipe by Mario
                 </span>
+              </div>
+              <div className='bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full p-2 absolute top-0 ml-2 mt-2'>
+                <span>25 mins</span>
               </div>
             </div>
           </div>
