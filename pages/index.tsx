@@ -11,14 +11,14 @@ const Home: NextPage = () => {
         <div>
           <nav>
             <div>
-              <h1 className='font-bold uppercase'>
+              <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <Link href="/">
                   <a>Kedai Makan</a>
                 </Link>
               </h1>
             </div>
             <ul>
-              <li className='font-bold text-gray-700'>
+              <li className="font-bold text-gray-700">
                 <Link href="#" passHref>
                   <span>Home</span>
                 </Link>
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
             </ul>
           </nav>
         </div>
-        <main>
+        <main className="px-16 py-6">
           <div>
             <Link href="#">
               <a>Log in</a>
@@ -46,32 +46,33 @@ const Home: NextPage = () => {
             </Link>
           </div>
           <header>
-            <h2 className='text-6xl text-gray-700 font-semibold'>Recipes</h2>
-            <h3 className='text-2xl font-semibold'>For Customers</h3>
+            <h2 className="text-6xl text-gray-700 font-semibold">Recipes</h2>
+            <h3 className="text-2xl font-semibold">For Customers</h3>
           </header>
-        </main>
-        <div>
-          <h4 className='font-bold'>Latest Recipes</h4>
-          {/* cards goes here */}
           <div>
-            <Image
-              src={Kacang}
-              alt="Bean Chilli Stew"
-              width="150"
-              height="100"
-            />
+            <h4 className="font-bold mt-12 pb-2 border-b-2 border-gray-200">Latest Recipes</h4>
+            {/* cards goes here */}
+            <div className="mt-8"></div>
             <div>
-              <span>5 Bean Chilli Stew</span>
-              <span>Recipe by Mario</span>
+              <Image
+                src={Kacang}
+                alt="Bean Chilli Stew"
+                width="150"
+                height="100"
+              />
+              <div>
+                <span>5 Bean Chilli Stew</span>
+                <span>Recipe by Mario</span>
+              </div>
             </div>
           </div>
-        </div>
-        <h4 className='font-bold'>Most Popular</h4>
-        {/* cards goes here */}
-        <div></div>
-        <div>
-          <div>Load More</div>
-        </div>
+          <h4 className="font-bold mt-12 pb-2 border-b-2 border-gray-200">Most Popular</h4>
+          {/* cards goes here */}
+          <div className="mt-8"></div>
+          <div>
+            <div>Load More</div>
+          </div>
+        </main>
       </div>
     </>
   );
