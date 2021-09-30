@@ -5,7 +5,7 @@ import Kacang from "../public/beanChilliStew.jpg";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <body className='font-body'>
       {/*Content wrapper*/}
       <div>
         <div>
@@ -74,7 +74,7 @@ const Home: NextPage = () => {
           </div>
         </main>
       </div>
-    </>
+    </body>
   );
 };
 
