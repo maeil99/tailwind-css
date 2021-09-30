@@ -2,6 +2,8 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Kacang from "../public/beanChilliStew.jpg";
+import NasiLemak from '../public/nasiLemak.jpg';
+import RotiCanaiBanjir from '../public/rotiCanaiTsunami.jpg'
 
 const Home: NextPage = () => {
   return (
@@ -55,20 +57,54 @@ const Home: NextPage = () => {
             </h4>
             {/* cards goes here */}
             <div className="mt-8"></div>
-            <div className="bg-white rounded overflow-hidden shadow-md relative">
+            <div className="card">
               <Image
                 src={Kacang}
                 alt="Bean Chilli Stew"
                 className="w-full h-32 md:h-48 object-cover"
               />
               <div className="m-4">
-                <span className="font-bold">5 Bean Chilli Stew</span>
+                <span className="font-bold">Bean Chilli Stew</span>
                 <span className="block text-gray-500 text-sm">
                   Recipe by Mario
                 </span>
               </div>
-              <div className='bg-secondary-100 text-secondary-200 text-xs font-bold rounded-full p-2 absolute top-0 ml-2 mt-2'>
+              <div className='badge'>
                 <span>25 mins</span>
+              </div>
+            </div>
+            <div className="card">
+              <Image
+                src={NasiLemak}
+                alt="Nasi Lemak"
+                className="w-full h-32 md:h-48 object-cover"
+              />
+              <div className="m-4">
+                <span className="font-bold">Nasi Lemak</span>
+                <span className="block text-gray-500 text-sm">
+                  Recipe by Maeil
+                </span>
+              </div>
+              <div className='badge'>
+                <span>15 mins</span>
+              </div>
+            </div>
+            <div className="card">
+              <Image
+                src={RotiCanaiBanjir}
+                alt="Roti Canai"
+                width='250'
+                height='220'
+                className="w-full h-32 md:h-48 object-cover"
+              />
+              <div className="m-4">
+                <span className="font-bold">Roti Canai Banjir Telur Goyang</span>
+                <span className="block text-gray-500 text-sm">
+                  Recipe by Luigi
+                </span>
+              </div>
+              <div className='badge'>
+                <span>5 mins</span>
               </div>
             </div>
           </div>
