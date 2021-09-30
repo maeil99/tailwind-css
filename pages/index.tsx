@@ -5,7 +5,7 @@ import Kacang from "../public/beanChilliStew.jpg";
 
 const Home: NextPage = () => {
   return (
-    <body className='font-body'>
+    <body className="font-body">
       {/*Content wrapper*/}
       <div>
         <div>
@@ -36,13 +36,13 @@ const Home: NextPage = () => {
             </ul>
           </nav>
         </div>
-        <main className="px-16 py-6">
-          <div className='flex justify-center md:justify-end'>
+        <main className="px-16 py-6 bg-gray-100">
+          <div className="flex justify-center md:justify-end">
             <Link href="#">
-              <a className='text-primary'>Log in</a>
+              <a className="text-primary">Log in</a>
             </Link>
             <Link href="#">
-              <a className='text-primary ml-2'>Sign up</a>
+              <a className="text-primary ml-2">Sign up</a>
             </Link>
           </div>
           <header>
@@ -50,27 +50,32 @@ const Home: NextPage = () => {
             <h3 className="text-2xl font-semibold">For Customers</h3>
           </header>
           <div>
-            <h4 className="font-bold mt-12 pb-2 border-b-2 border-gray-200">Latest Recipes</h4>
+            <h4 className="font-bold mt-12 pb-2 border-b-2 border-gray-200">
+              Latest Recipes
+            </h4>
             {/* cards goes here */}
             <div className="mt-8"></div>
-            <div>
+            <div className="bg-white rounded overflow-hidden shadow-md">
               <Image
                 src={Kacang}
                 alt="Bean Chilli Stew"
-                width="150"
-                height="100"
+                className="w-full h-32 md:h-48 object-cover"
               />
-              <div>
-                <span>5 Bean Chilli Stew</span>
-                <span>Recipe by Mario</span>
+              <div className="m-4">
+                <span className="font-bold">5 Bean Chilli Stew</span>
+                <span className="block text-gray-500 text-sm">
+                  Recipe by Mario
+                </span>
               </div>
             </div>
           </div>
-          <h4 className="font-bold mt-12 pb-2 border-b-2 border-gray-200">Most Popular</h4>
+          <h4 className="font-bold mt-12 pb-2 border-b-2 border-gray-200">
+            Most Popular
+          </h4>
           {/* cards goes here */}
           <div className="mt-8"></div>
-          <div className='flex justify-center'>
-            <div className='bg-secondary-100 text-secondary-200'>Load More</div>
+          <div className="flex justify-center">
+            <div className="bg-secondary-100 text-secondary-200">Load More</div>
           </div>
         </main>
       </div>
