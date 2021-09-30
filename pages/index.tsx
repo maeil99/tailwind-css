@@ -39,10 +39,10 @@ const Home: NextPage = () => {
         <main className="px-16 py-6">
           <div>
             <Link href="#">
-              <a>Log in</a>
+              <a className='text-primary'>Log in</a>
             </Link>
             <Link href="#">
-              <a>Sign up</a>
+              <a className='text-primary'>Sign up</a>
             </Link>
           </div>
           <header>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
           {/* cards goes here */}
           <div className="mt-8"></div>
           <div>
-            <div>Load More</div>
+            <div className='bg-secondary-100 text-secondary-200'>Load More</div>
           </div>
         </main>
       </div>
