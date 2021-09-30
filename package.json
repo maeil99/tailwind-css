@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build-css": "tailwindcss build styles/styles.css -o public/styles.css"
+    "build-css": "tailwindcss build styles/style.css -o styles/styles.css"
   },
   "dependencies": {
     "next": "11.1.2",

@@ -11,14 +11,14 @@ const Home: NextPage = () => {
         <div>
           <nav>
             <div>
-              <h1>
+              <h1 className='font-bold uppercase'>
                 <Link href="/">
                   <a>Kedai Makan</a>
                 </Link>
               </h1>
             </div>
             <ul>
-              <li>
+              <li className='font-bold text-gray-700'>
                 <Link href="#" passHref>
                   <span>Home</span>
                 </Link>
@@ -46,12 +46,12 @@ const Home: NextPage = () => {
             </Link>
           </div>
           <header>
-            <h2>Recipes</h2>
-            <h3>For Customers</h3>
+            <h2 className='text-6xl text-gray-700 font-semibold'>Recipes</h2>
+            <h3 className='text-2xl font-semibold'>For Customers</h3>
           </header>
         </main>
         <div>
-          <h4>Latest Recipes</h4>
+          <h4 className='font-bold'>Latest Recipes</h4>
           {/* cards goes here */}
           <div>
             <Image
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <h4>Most Popular</h4>
+        <h4 className='font-bold'>Most Popular</h4>
         {/* cards goes here */}
         <div></div>
         <div>
