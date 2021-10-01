@@ -185,12 +185,12 @@ const Home: NextPage = () => {
         <main className="px-16 py-6 bg-gray-100 md:col-span-2">
           <div className="flex justify-center md:justify-end">
             <Link href="#">
-              <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">
+              <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">
                 Log in
               </a>
             </Link>
             <Link href="#">
-              <a className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white">
+              <a className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">
                 Sign up
               </a>
             </Link>
@@ -307,7 +307,7 @@ const Home: NextPage = () => {
           {/* cards goes here */}
           <div className="mt-8"></div>
           <div className="flex justify-center">
-            <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-md">
+            <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-md transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
               Load More
             </div>
           </div>
