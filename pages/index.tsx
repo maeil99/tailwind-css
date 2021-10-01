@@ -15,7 +15,7 @@ const Home: NextPage = () => {
             <div>
               <h1 className="font-bold uppercase p-4 border-b border-gray-100">
                 <Link href="/">
-                  <a>Kedai Makan</a>
+                  <a className='hover:text-gray-700'>Kedai Makan</a>
                 </Link>
               </h1>
             </div>
@@ -89,12 +89,12 @@ const Home: NextPage = () => {
         <main className="px-16 py-6 bg-gray-100 md:col-span-2">
           <div className="flex justify-center md:justify-end">
             <Link href="#">
-              <a className="btn text-primary border-primary md:border-2">
+              <a className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">
                 Log in
               </a>
             </Link>
             <Link href="#">
-              <a className="btn text-primary ml-2 border-primary md:border-2">
+              <a className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white">
                 Sign up
               </a>
             </Link>
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
             </h4>
             {/* cards goes here */}
             <div className="mt-8 grid lg:grid-cols-3 gap-10">
-              <div className="card">
+              <div className="card hover:shadow-lg">
                 <Image
                   src={Kacang}
                   alt="Bean Chilli Stew"
@@ -139,7 +139,7 @@ const Home: NextPage = () => {
                   <span>25 mins</span>
                 </div>
               </div>
-              <div className="card">
+              <div className="card hover:shadow-lg">
                 <Image
                   src={NasiLemak}
                   alt="Nasi Lemak"
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
                   <span>15 mins</span>
                 </div>
               </div>
-              <div className="card">
+              <div className="card hover:shadow-lg">
                 <Image
                   src={RotiCanaiBanjir}
                   alt="Roti Canai"
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
           {/* cards goes here */}
           <div className="mt-8"></div>
           <div className="flex justify-center">
-            <div className="btn bg-secondary-100 text-secondary-200">
+            <div className="btn bg-secondary-100 text-secondary-200 hover:shadow-md">
               Load More
             </div>
           </div>
